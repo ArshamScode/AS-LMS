@@ -1,4 +1,7 @@
 
+[🇬🇧 English](README.md) | [🇮🇷 فارسی](README.fa.md) | [🇸🇦 العربية](README.ar.md) | [🇨🇳 简体中文](README.zh-CN.md)
+
+---
 # AS-LMS — نظام إدارة التعلّم
 
 **AS-LMS** هو تطبيق مكتبي لإدارة العمليات التعليمية، تم تطويره باستخدام Python وواجهة Tkinter الرسومية وقاعدة بيانات MySQL.
