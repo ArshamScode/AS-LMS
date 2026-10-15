@@ -1,17 +1,17 @@
-
 [🇬🇧 English](README.md) | [🇮🇷 فارسی](README.fa.md) | [🇸🇦 العربية](README.ar.md) | [🇨🇳 简体中文](README.zh-CN.md)
 
 ---
+
 # AS-LMS — Learning Management System
 
-A desktop-based Learning Management System built with Python, Tkinter, and MySQL. AS-LMS provides separate interfaces for administrators, teachers, and students to manage courses, assignments, submissions, grades, and academic feedback.
+AS-LMS is a desktop-based Learning Management System built with Python, Tkinter, and MySQL. It provides separate interfaces for administrators, teachers, and students to manage courses, assignments, submissions, grades, and academic feedback.
 
 ## Features
 
 ### Administrator
 - Manage user accounts and roles.
 - Manage courses and course enrollments.
-- Assign teachers and students to the appropriate academic relationships.
+- Assign teachers and students to appropriate academic relationships.
 - Manage student–teacher advisor relationships.
 
 ### Teacher
@@ -33,7 +33,7 @@ A desktop-based Learning Management System built with Python, Tkinter, and MySQL
 - **GUI:** Tkinter and ttk
 - **Database:** MySQL
 - **Database Connector:** MySQL Connector/Python
-- **Password Hashing:** SHA-256
+- **Password Hashing:** SHA-256 in the current implementation
 
 ## Requirements
 
@@ -43,6 +43,8 @@ A desktop-based Learning Management System built with Python, Tkinter, and MySQL
 - pip
 
 ## Project Structure
+
+The following is an example of the project structure. The actual files in the repository may differ.
 
 ```text
 AS-LMS/
@@ -61,8 +63,6 @@ AS-LMS/
 └── README.md
 ```
 
-The exact files in your repository may differ slightly from this example.
-
 ## Installation and Setup
 
 ### 1. Download the project
@@ -74,7 +74,7 @@ git clone https://github.com/ArshamScode/AS-LMS.git
 cd AS-LMS
 ```
 
-Alternatively, select **Code → Download ZIP** on GitHub and extract the archive.
+Alternatively, select **Code → Download ZIP** on GitHub and extract the downloaded archive.
 
 ### 2. Create a virtual environment
 
@@ -84,7 +84,7 @@ python -m venv .venv
 
 Activate it on Windows:
 
-```bash
+```bat
 .venv\Scripts\activate
 ```
 
@@ -98,31 +98,21 @@ pip install -r requirements.txt
 
 Make sure MySQL Server is installed and running.
 
-Review the database connection settings used by the application, typically in `model.py`. Configure the host, port, username, password, and database name for your local MySQL installation.
+Configure the database host, port, username, password, and database name according to your local MySQL installation. Review the database connection settings used by the application, typically in `model.py`.
 
-Do not publish real database passwords or other private credentials.
+Do not commit real database passwords or other private credentials to the repository.
 
 ### 5. Create the database tables
 
-Open MySQL Workbench or another MySQL client and execute:
+If your repository contains `database/schema.sql`, open MySQL Workbench or another MySQL client and execute that script to create the database structure.
 
-```text
-database/schema.sql
-```
-
-This script creates the database and the tables required by the application. It does not intentionally drop an existing database.
+Review the SQL script before running it. Confirm that it will not delete or overwrite a database containing data you need to keep.
 
 ### 6. Insert demonstration data
 
-After creating the schema, execute:
+If your repository contains `database/seed.sql`, execute it after creating the schema to insert the demonstration data.
 
-```text
-database/seed.sql
-```
-
-This inserts demonstration users, a course, enrollments, and an assignment.
-
-Run the seed script only once on a fresh demonstration database unless you have checked its effects. The sample inserts are not designed as a repeatable migration.
+Run the seed script only when appropriate. Unless it is explicitly designed to be repeatable, running it multiple times may cause duplicate records or other database issues.
 
 ### 7. Run the application
 
@@ -134,9 +124,9 @@ python main.py
 
 ## Demo Login Credentials
 
-The demonstration accounts use the following credentials, provided that `database/seed.sql` has been executed successfully.
+The following demonstration accounts are documented for local testing. They will work only if the database has been initialized with matching account records and password hashes.
 
-**Password for all demo accounts:** `password123`
+**Demonstration password:** `password123`
 
 | Role | Username | Password |
 |---|---|---|
@@ -149,7 +139,7 @@ These accounts are for local testing and demonstration only. Do not use the samp
 
 ## Database
 
-The database schema includes tables for:
+The database is designed to support the application's learning-management workflows, including:
 
 - Users and roles
 - Teacher–student advisor relationships
@@ -158,14 +148,15 @@ The database schema includes tables for:
 - Student submissions
 - Grades and feedback
 
-The SQL scripts are provided separately so users can create the database structure and optionally load demonstration data.
+Refer to the SQL files included in the repository for the actual database schema and any available demonstration data.
 
 ## Security Notes
 
-- The included demo accounts use a shared demonstration password.
-- SHA-256 is used by the current project for password hashing. For production systems, use a password-hashing algorithm designed for passwords, such as Argon2id, scrypt, or bcrypt, with appropriate configuration.
+- The demonstration accounts use a shared sample password.
+- The current implementation uses SHA-256 for password hashing. SHA-256 alone is not recommended for storing passwords in production applications. Use a password-hashing algorithm designed for passwords, such as Argon2id, scrypt, or bcrypt, with appropriate configuration.
 - Configure your own MySQL credentials locally.
 - Never commit real passwords, API keys, private configuration files, or sensitive user data to a public repository.
+- Review SQL scripts before executing them, especially if they create, drop, or overwrite databases or tables.
 - Review and test the project before using it with real users or production data.
 
 ## Troubleshooting
@@ -173,34 +164,21 @@ The SQL scripts are provided separately so users can create the database structu
 **MySQL connection error**
 - Confirm that MySQL Server is running.
 - Verify the host, port, username, and password in the application's database configuration.
-- Confirm that the database has been created successfully.
+- Confirm that the required database and tables exist.
 
 **Missing Python module**
 - Activate the virtual environment.
 - Run `pip install -r requirements.txt` again.
+- Confirm that `requirements.txt` lists the dependencies required by the application.
 
 **Demo login does not work**
-- Confirm that `database/seed.sql` ran successfully.
-- Check that the application and seed script use the same database.
-- Verify that the password hashing logic matches the hashes stored in the database.
+- Confirm that the demonstration account records exist in the database.
+- Check that the application connects to the same database that contains those records.
+- Verify that the password hashing logic matches the password hashes stored in the database.
 
 ## Project Purpose
 
 AS-LMS is a desktop software project demonstrating Python GUI development, MySQL integration, role-based interfaces, and common learning-management workflows.
-
-## Author
-
-**Arsham Sarmast**
-
-GitHub: [@ArshamScode](https://github.com/ArshamScode)
-
-## License
-
-No license has been specified yet. Unless a license is added to this repository, users should not assume that they have permission to redistribute, modify, or commercially use the project.
-
----
-
-If you find this project useful, consider starring the repository on GitHub.
 
 ## Screenshots
 
@@ -220,6 +198,20 @@ If you find this project useful, consider starring the repository on GitHub.
 
 ![AS-LMS Student Dashboard](docs/screenshots/student-dashboard.png)
 
+If a screenshot does not appear, check that the image exists at the specified path and that its filename and capitalization match the Markdown link.
+
+## Author
+
+**Arsham Sarmast**
+
+GitHub: [@ArshamScode](https://github.com/ArshamScode)
+
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full terms and conditions.
+AS-LMS is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full license text.
+
+The MIT License permits use, modification, distribution, and commercial use, subject to its terms, including preservation of the copyright and license notices. The software is provided without warranty. See the `LICENSE` file for details.
+
+---
+
+If you find this project useful, consider starring the repository on GitHub.
