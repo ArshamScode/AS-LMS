@@ -1,4 +1,7 @@
 
+[🇬🇧 English](README.md) | [🇮🇷 فارسی](README.fa.md) | [🇸🇦 العربية](README.ar.md) | [🇨🇳 简体中文](README.zh-CN.md)
+
+---
 # AS-LMS — 学习管理系统
 
 **AS-LMS** 是一款桌面学习管理应用，使用 Python、Tkinter 图形界面和 MySQL 数据库开发。
