@@ -224,3 +224,8 @@ GitHub: [@ArshamScode](https://github.com/ArshamScode)
 ### لوحة تحكم الطالب
 
 ![لوحة تحكم الطالب في نظام AS-LMS](docs/screenshots/student-dashboard.png)
+
+
+## الترخيص
+
+هذا المشروع منشور بموجب ترخيص MIT. للاطلاع على الشروط الكاملة للاستخدام والتعديل وإعادة التوزيع، يرجى قراءة ملف [LICENSE](LICENSE).
