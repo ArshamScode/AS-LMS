@@ -1,4 +1,7 @@
 
+[🇬🇧 English](README.md) | [🇮🇷 فارسی](README.fa.md) | [🇸🇦 العربية](README.ar.md) | [🇨🇳 简体中文](README.zh-CN.md)
+
+---
 # AS-LMS — Learning Management System
 
 A desktop-based Learning Management System built with Python, Tkinter, and MySQL. AS-LMS provides separate interfaces for administrators, teachers, and students to manage courses, assignments, submissions, grades, and academic feedback.
