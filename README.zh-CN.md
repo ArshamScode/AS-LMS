@@ -225,3 +225,7 @@ GitHub：[@ArshamScode](https://github.com/ArshamScode)
 
 ![AS-LMS 学生控制面板](docs/screenshots/student-dashboard.png)
 
+
+## 许可证
+
+本项目采用 MIT 许可证发布。有关使用、修改和再分发的完整条款，请参阅 [LICENSE](LICENSE) 文件。
