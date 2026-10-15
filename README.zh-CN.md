@@ -204,20 +204,24 @@ GitHub：[@ArshamScode](https://github.com/ArshamScode)
 
 如果你觉得这个项目有帮助，欢迎在 GitHub 上为仓库点亮 Star。
 
-## Screenshots
 
-### Login Screen
+---
 
-![AS-LMS Login Screen](docs/screenshots/login.png)
+## 应用程序截图
 
-### Administrator Dashboard
+### 登录界面
 
-![AS-LMS Administrator Dashboard](docs/screenshots/admin-dashboard.png)
+![AS-LMS 登录界面](docs/screenshots/login.png)
 
-### Teacher Dashboard
+### 管理员控制面板
 
-![AS-LMS Teacher Dashboard](docs/screenshots/teacher-dashboard.png)
+![AS-LMS 管理员控制面板](docs/screenshots/admin-dashboard.png)
 
-### Student Dashboard
+### 教师控制面板
 
-![AS-LMS Student Dashboard](docs/screenshots/student-dashboard.png)
+![AS-LMS 教师控制面板](docs/screenshots/teacher-dashboard.png)
+
+### 学生控制面板
+
+![AS-LMS 学生控制面板](docs/screenshots/student-dashboard.png)
+
