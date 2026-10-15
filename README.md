@@ -14,6 +14,22 @@ A Python desktop application for managing educational activities, courses, assig
 * **MySQL database:** Store application data in a relational database.
 * **Desktop interface:** A graphical interface built with Tkinter and ttk.
 
+## Demo Login Credentials
+
+You can use the following demo accounts to explore the application's different user roles.
+
+**Password for all demo accounts:** `password123`
+
+| Role          | Username   | Password      |
+| ------------- | ---------- | ------------- |
+| Administrator | `admin`    | `password123` |
+| Teacher       | `teacher1` | `password123` |
+| Student       | `student1` | `password123` |
+| Student       | `student2` | `password123` |
+
+**Note:** These credentials are for demonstration and testing purposes only. Do not use them for real accounts or sensitive data.
+
+
 ## Technology Stack
 
 * Python
