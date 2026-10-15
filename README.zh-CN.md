@@ -203,3 +203,21 @@ GitHub：[@ArshamScode](https://github.com/ArshamScode)
 ---
 
 如果你觉得这个项目有帮助，欢迎在 GitHub 上为仓库点亮 Star。
+
+## Screenshots
+
+### Login Screen
+
+![AS-LMS Login Screen](docs/screenshots/login.png)
+
+### Administrator Dashboard
+
+![AS-LMS Administrator Dashboard](docs/screenshots/admin-dashboard.png)
+
+### Teacher Dashboard
+
+![AS-LMS Teacher Dashboard](docs/screenshots/teacher-dashboard.png)
+
+### Student Dashboard
+
+![AS-LMS Student Dashboard](docs/screenshots/student-dashboard.png)
