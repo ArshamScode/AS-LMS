@@ -203,3 +203,24 @@ AS-LMS پروژه‌ای دسکتاپ برای نمایش توانایی‌ها�
 ---
 
 اگر این پروژه برایتان مفید بود، می‌توانید مخزن آن را در GitHub ستاره‌دار کنید.
+
+
+---
+
+## تصاویر برنامه
+
+### صفحه ورود
+
+![صفحه ورود سامانه AS-LMS](docs/screenshots/login.png)
+
+### پنل مدیریت
+
+![پنل مدیریت سامانه AS-LMS](docs/screenshots/admin-dashboard.png)
+
+### پنل معلم
+
+![پنل معلم سامانه AS-LMS](docs/screenshots/teacher-dashboard.png)
+
+### پنل دانش‌آموز
+
+![پنل دانش‌آموز سامانه AS-LMS](docs/screenshots/student-dashboard.png)
