@@ -201,3 +201,21 @@ No license has been specified yet. Unless a license is added to this repository,
 ---
 
 If you find this project useful, consider starring the repository on GitHub.
+
+## Screenshots
+
+### Login Screen
+
+![AS-LMS Login Screen](docs/screenshots/login.png)
+
+### Administrator Dashboard
+
+![AS-LMS Administrator Dashboard](docs/screenshots/admin-dashboard.png)
+
+### Teacher Dashboard
+
+![AS-LMS Teacher Dashboard](docs/screenshots/teacher-dashboard.png)
+
+### Student Dashboard
+
+![AS-LMS Student Dashboard](docs/screenshots/student-dashboard.png)
