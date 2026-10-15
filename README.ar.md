@@ -203,3 +203,24 @@ GitHub: [@ArshamScode](https://github.com/ArshamScode)
 ---
 
 إذا وجدت المشروع مفيدًا، يمكنك إضافة نجمة إلى المستودع على GitHub.
+
+
+---
+
+## لقطات شاشة التطبيق
+
+### شاشة تسجيل الدخول
+
+![شاشة تسجيل الدخول لنظام AS-LMS](docs/screenshots/login.png)
+
+### لوحة تحكم المسؤول
+
+![لوحة تحكم المسؤول في نظام AS-LMS](docs/screenshots/admin-dashboard.png)
+
+### لوحة تحكم المعلم
+
+![لوحة تحكم المعلم في نظام AS-LMS](docs/screenshots/teacher-dashboard.png)
+
+### لوحة تحكم الطالب
+
+![لوحة تحكم الطالب في نظام AS-LMS](docs/screenshots/student-dashboard.png)
