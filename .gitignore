@@ -1,0 +1,51 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+
+.vscode/
+.idea/
+*.swp
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test and coverage artifacts
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+
+*.log
+
+# Local databases and backups
+
+*.sqlite3
+*.db
+*.bak
+
+# Build artifacts
+
+build/
+dist/
+*.spec
