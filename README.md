@@ -219,3 +219,7 @@ If you find this project useful, consider starring the repository on GitHub.
 ### Student Dashboard
 
 ![AS-LMS Student Dashboard](docs/screenshots/student-dashboard.png)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for the full terms and conditions.
